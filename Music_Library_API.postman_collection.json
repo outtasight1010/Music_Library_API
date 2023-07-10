@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "e651842b-6512-4e67-ae6f-ea090a8cf220",
+		"name": "Music_Library_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26761826"
+	},
+	"item": [
+		{
+			"name": "Get_All_Songs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get_All_Songs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/music/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"music",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jul 2023 03:20:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1486"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Lover\",\n        \"artist\": \"Taylor Swift\",\n        \"album\": \"Lover\",\n        \"release_date\": \"2019-08-23\",\n        \"genre\": \"Pop-Rock, Electropop\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Red Red Wine\",\n        \"artist\": \"UB40\",\n        \"album\": \"Labour of Love\",\n        \"release_date\": \"1983-09-23\",\n        \"genre\": \"Reggae\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"(I Can't) Help Falling in Love\",\n        \"artist\": \"UB40\",\n        \"album\": \"Promises & Lies\",\n        \"release_date\": \"1993-07-12\",\n        \"genre\": \"Reggae\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Baby, I Love Your Way\",\n        \"artist\": \"Big Mountain\",\n        \"album\": \"Unity\",\n        \"release_date\": \"1994-07-19\",\n        \"genre\": \"Pop Music, Reggae\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Time After Time\",\n        \"artist\": \"Cyndi Lauper\",\n        \"album\": \"She's So Unusual\",\n        \"release_date\": \"1983-10-14\",\n        \"genre\": \"New wave, Popmusic, Rock\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Never Ever\",\n        \"artist\": \"All Saints\",\n        \"album\": \"All Saints\",\n        \"release_date\": \"1997-11-24\",\n        \"genre\": \"Pop, Christian\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Always\",\n        \"artist\": \"Erasure\",\n        \"album\": \"| Say | Say | Say\",\n        \"release_date\": \"1994-05-16\",\n        \"genre\": \"Synthpop, Dance\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Free Me\",\n        \"artist\": \"Cipes and the People\",\n        \"album\": \"Conscious Revolution\",\n        \"release_date\": \"2007-09-18\",\n        \"genre\": \"Hip hop, surf music, traditional pop\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Two Minds\",\n        \"artist\": \"Nero\",\n        \"album\": \"Between II Worlds\",\n        \"release_date\": \"2015-08-21\",\n        \"genre\": \"Future House\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Hang\",\n        \"artist\": \"Matchbox Twenty\",\n        \"album\": \"Yourself or Someone Like You\",\n        \"release_date\": \"1996-10-01\",\n        \"genre\": \"Alternative Rock, Post-grunge\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Into You\",\n        \"artist\": \"Fabolous\",\n        \"album\": \"Street Dreams\",\n        \"release_date\": \"2003-03-07\",\n        \"genre\": \"Hip hop\"\n    }\n]"
+				},
+				{
+					"name": "Get_All_Songs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/music/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"music",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jul 2023 03:27:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1486"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Lover\",\n        \"artist\": \"Taylor Swift\",\n        \"album\": \"Lover\",\n        \"release_date\": \"2019-08-23\",\n        \"genre\": \"Pop-Rock, Electropop\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Red Red Wine\",\n        \"artist\": \"UB40\",\n        \"album\": \"Labour of Love\",\n        \"release_date\": \"1983-09-23\",\n        \"genre\": \"Reggae\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"(I Can't) Help Falling in Love\",\n        \"artist\": \"UB40\",\n        \"album\": \"Promises & Lies\",\n        \"release_date\": \"1993-07-12\",\n        \"genre\": \"Reggae\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Baby, I Love Your Way\",\n        \"artist\": \"Big Mountain\",\n        \"album\": \"Unity\",\n        \"release_date\": \"1994-07-19\",\n        \"genre\": \"Pop Music, Reggae\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Time After Time\",\n        \"artist\": \"Cyndi Lauper\",\n        \"album\": \"She's So Unusual\",\n        \"release_date\": \"1983-10-14\",\n        \"genre\": \"New wave, Popmusic, Rock\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Never Ever\",\n        \"artist\": \"All Saints\",\n        \"album\": \"All Saints\",\n        \"release_date\": \"1997-11-24\",\n        \"genre\": \"Pop, Christian\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Always\",\n        \"artist\": \"Erasure\",\n        \"album\": \"| Say | Say | Say\",\n        \"release_date\": \"1994-05-16\",\n        \"genre\": \"Synthpop, Dance\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Free Me\",\n        \"artist\": \"Cipes and the People\",\n        \"album\": \"Conscious Revolution\",\n        \"release_date\": \"2007-09-18\",\n        \"genre\": \"Hip hop, surf music, traditional pop\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Two Minds\",\n        \"artist\": \"Nero\",\n        \"album\": \"Between II Worlds\",\n        \"release_date\": \"2015-08-21\",\n        \"genre\": \"Future House\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Hang\",\n        \"artist\": \"Matchbox Twenty\",\n        \"album\": \"Yourself or Someone Like You\",\n        \"release_date\": \"1996-10-01\",\n        \"genre\": \"Alternative Rock, Post-grunge\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Into You\",\n        \"artist\": \"Fabolous\",\n        \"album\": \"Street Dreams\",\n        \"release_date\": \"2003-03-07\",\n        \"genre\": \"Hip hop\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create_Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"No Easy Way Out\",\r\n        \"artist\": \"Robert Tepper\",\r\n        \"album\": \"Rocky IV Soundtrack\",\r\n        \"release_date\": \"1985-11-27\",\r\n        \"genre\": \"Album-oriented Rock, Hard Rock\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"title\": \"No Easy Way Out\",\r\n        \"artist\": \"Robert Tepper\",\r\n        \"album\": \"Rocky IV Soundtrack\",\r\n        \"release_date\": \"1985-11-27\",\r\n        \"genre\": \"Album-oriented Rock, Hard Rock\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/music/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"music",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jul 2023 03:54:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 12,\n    \"title\": \"No Easy Way Out\",\n    \"artist\": \"Robert Tepper\",\n    \"album\": \"Rocky IV Soundtrack\",\n    \"release_date\": \"1985-11-27\",\n    \"genre\": \"Album-oriented Rock, Hard Rock\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get_Song_By_Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/music/4/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"music",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jul 2023 04:07:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, DELETE, GET, PUT"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"title\": \"Baby, I Love Your Way\",\n    \"artist\": \"Big Mountain\",\n    \"album\": \"Unity\",\n    \"release_date\": \"1994-07-19\",\n    \"genre\": \"Pop Music, Reggae\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete_Song",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
