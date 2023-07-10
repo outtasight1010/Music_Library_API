@@ -74,6 +74,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'songs_project.wsgi.application'
 
 
