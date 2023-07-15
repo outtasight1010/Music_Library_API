@@ -1,8 +1,6 @@
 body {
     
     background-image: url('https://img.freepik.com/free-photo/top-view-laptop-with-heart_23-2148186928.jpg?w=360');
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     background-color:azure;
     background-repeat: no-repeat;
     background-position: cover;
@@ -13,4 +11,6 @@ body {
 
   h2 {
     padding-left: 1000px;
+    font-family:cursive;
+    font-size: 20px;
   }
