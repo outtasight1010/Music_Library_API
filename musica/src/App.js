@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import NavigationBar from './Components/NavBar/NavBar';
 import SearchBar from './Components/SearchBar/SearchBar';
 import MusicTable from './Components/MusicTable/MusicTable';
