@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import NavigationBar from './Components/NavBar/NavBar';
+import SearchBar from './Components/SearchBar/SearchBar';
+import MusicTable from './Components/MusicTable/MusicTable';
 
 
 function App() {
   return (
-    <div >
-      <h3>HI cricky</h3>
+    
+    
+    <div>
+      <NavigationBar/>
+      <h3>Song List</h3>
+      <SearchBar/>
+      <MusicTable/>
+
     </div>
+
+  
+
   );
 }
 
