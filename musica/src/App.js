@@ -6,12 +6,13 @@ import './App.css';
 
 
 function App() {
+  
   return (
     
     
     <div>
       <NavigationBar/>
-      <h2>Songs List</h2>
+      
       
       <SearchBar/>
       <MusicTable/>

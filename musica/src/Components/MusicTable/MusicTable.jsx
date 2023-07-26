@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './MusicTable.css';
 
 const MusicTable = () => {
     const [songs, setSongs] = useState([]);
@@ -20,17 +21,20 @@ const MusicTable = () => {
     },[]);
 
     return(
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Album</th>
-                    <th>Artist</th>
-                    <th>Genre</th>
-                    <th>Release Date</th>
-                </tr>
-            </thead>
-            <tbody>
+        
+        <div className='music-table'>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Album</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
                 {songs.map((song) => (
                     <tr key={song.id}>
                         <td>{song.title}</td>
@@ -43,6 +47,7 @@ const MusicTable = () => {
                 ))}
             </tbody>
         </table>
+        </div>
     );
 };
 
