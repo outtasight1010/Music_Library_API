@@ -11,17 +11,18 @@
 }
 
 .music-table {
-    width: 100%;
+    width: 60%;
    
   
 }
 
 table {
     width:100%;
-    border-collapse:collapse;
+   
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     margin-left: 20px;
+    
 }
 
 th {
@@ -42,4 +43,56 @@ tr:hover {
 
 td { 
     padding: 5px;
+}
+.title-header {
+    font-weight: bold;
+    color: #333;
+}
+.title-cell{
+    font-style: italic;
+    font-size:smaller;
+    font-weight: bolder;
+    
+}
+.album-header {
+    font-weight: bold;
+    color:#333
+
+}
+
+.album-cell {
+    font-style: oblique;
+    color:darkslategray;
+    font-size: smaller;
+}
+.artist-header {
+    font-weight: bold;
+    color:#333
+
+}
+
+.genre-header {
+    font-weight: bold;
+    color:#333
+
+}
+.releaseDate-header {
+    font-weight: bold;
+    color:#333
+
+}
+.artist-cell {
+    font-style: oblique;
+    color:darkslategray;
+    font-size: smaller;
+}
+.genre-cell {
+    font-style: oblique;
+    color:darkcyan;
+    font-size: smaller;
+}
+.releaseDate-cell {
+    font-style: oblique;
+    color:darkslategray;
+    font-size: smaller;
 }

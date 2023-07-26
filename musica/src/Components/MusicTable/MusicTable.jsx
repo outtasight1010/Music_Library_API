@@ -27,21 +27,21 @@ const MusicTable = () => {
             <table>
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Album</th>
-                        <th>Artist</th>
-                        <th>Genre</th>
-                        <th>Release Date</th>
+                        <th className='title-header'>Title</th>
+                        <th className='album-header'>Album</th>
+                        <th className='artist-header'>Artist</th>
+                        <th className='genre-header'>Genre</th>
+                        <th className='releaseDate-header'>Release Date</th>
                     </tr>
                 </thead>
                 <tbody>
                 {songs.map((song) => (
                     <tr key={song.id}>
-                        <td>{song.title}</td>
-                        <td>{song.album}</td>
-                        <td>{song.artist}</td>
-                        <td>{song.genre}</td>
-                        <td>{song.release_date}</td>
+                        <td className='title-cell'>{song.title}</td>
+                        <td className='album-cell'>{song.album}</td>
+                        <td className='artist-cell'>{song.artist}</td>
+                        <td className='genre-cell'>{song.genre}</td>
+                        <td className='releaseDate-cell'>{song.release_date}</td>
                     </tr>
 
                 ))}
