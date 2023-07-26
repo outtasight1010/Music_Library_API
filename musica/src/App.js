@@ -6,6 +6,7 @@ import axios from 'axios';
 import './App.css';
 import MusicFilteredForm from './Components/MusicFilteredForm/MusicFilteredForm';
 import AddSongForm from './Components/AddSongForm/AddSongForm';
+import UpdateSongModal from './Components/UpdateSongModel/UpdateSongModel';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <NavigationBar/>
       <MusicFilteredForm/>
       <AddSongForm/>
+      
     </div>
 
   
