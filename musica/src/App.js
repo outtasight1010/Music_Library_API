@@ -27,14 +27,9 @@ function App() {
   
   return (
     
-    
     <div>
       <NavigationBar/>
-      
       <MusicFilteredForm/>
-      
-      
-
     </div>
 
   
