@@ -1,1 +1,16 @@
+button {
+    border-radius: 3px;
+    color: blue;
+    font-weight: bold;
 
+}
+
+input {
+   
+    border-color: blue;
+    border-radius: 3px;
+    margin-left: 20px;
+    background-color: azure;
+    font-weight: bold;
+    
+}
