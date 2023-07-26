@@ -5,6 +5,7 @@ import MusicTable from './Components/MusicTable/MusicTable';
 import axios from 'axios';
 import './App.css';
 import MusicFilteredForm from './Components/MusicFilteredForm/MusicFilteredForm';
+import AddSongForm from './Components/AddSongForm/AddSongForm';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <div>
       <NavigationBar/>
       <MusicFilteredForm/>
+      <AddSongForm/>
     </div>
 
   

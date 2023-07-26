@@ -1,18 +1,1 @@
-.search-bar {
-    display:flex;
-    align-items: center;
-    padding-left: 350px;
-}
-.search-bar input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 8px;
-}
 
-.search-bar button {
-    padding:8px 12px ;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
