@@ -4,21 +4,21 @@ import MusicFilteredForm from '../MusicFilteredForm/MusicFilteredForm';
 import SearchBar from '../SearchBar/SearchBar';
 import './MusicTable.css';
 
-const MusicTable = () => {
-    const [songs, setSongs] = useState([]);
+const MusicTable = ({songs}) => {
+    //const [songs, setSongs] = useState([]);
     
 
-    useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/music/')
-        .then((response) => {
-            setSongs(response.data);
-        })
+    //useEffect(() => {
+        //axios.get('http://127.0.0.1:8000/api/music/')
+        //.then((response) => {
+            //setSongs(response.data);
+       // })
             
-        .catch((error) => {
-            console.error('Error fetching data:..', error);
-        });
+        //.catch((error) => {
+            //console.error('Error fetching data:..', error);
+        //});
             
-        }, []);
+        //}, []);
   
 
     return(
