@@ -17,7 +17,7 @@ const MusicFilteredForm = () => {
   }, []);
 
   useEffect(() => {
-    // Filter the musicData based on the searchQuery
+    // Filter the songs based on the searchQuery
     const filteredSongs = songs.filter((song) =>
     song.title.toLowerCase().includes(searchQuery.toLowerCase())||
     song.album.toLowerCase().includes(searchQuery.toLowerCase())||
