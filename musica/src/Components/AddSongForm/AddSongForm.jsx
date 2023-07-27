@@ -16,19 +16,38 @@ const AddSongForm = () => {
     setSongs({ ...songs, [name]: value });
   };
 
+  const addSong = async () => {
+    try {
+        const response = await axios.post('http://127.0.0.1:8000/api/music/', songs);
+      console.log('Song added successfully!', response.data);
+      // You can perform additional actions after the song is added
+    } catch (error) {
+      console.error('Error adding song:', error);
+      // Handle the error if necessary
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Make a POST request to the backend API using Axios
-    axios.post('http://127.0.0.1:8000/api/music/', songs)
-      .then((response) => {
-        // Handle successful response, e.g., show a success message
-        console.log('Song added successfully!', response.data);
-      })
-      .catch((error) => {
-        // Handle error response, e.g., show an error message
-        console.error('Error adding song:', error);
-      });
+    addSong();
   };
+
+
+  
+
+  //const handleSubmit = (e) => {
+    //e.preventDefault();
+    // Make a POST request to the backend API using Axios
+    //axios.post('http://127.0.0.1:8000/api/music/', songs)
+     // .then((response) => {
+        // Handle successful response, e.g., show a success message
+        //console.log('Song added successfully!', response.data);
+      //})
+      //.catch((error) => {
+        // Handle error response, e.g., show an error message
+        //console.error('Error adding song:', error);
+      //});
+  //};
 
   return (
     <form onSubmit={handleSubmit} style={styles.form}>

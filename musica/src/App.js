@@ -31,7 +31,14 @@ function App() {
     
     <div>
       <NavigationBar/>
+      <br></br>
       <MusicFilteredForm/>
+      <hr 
+        size="10"
+        color= 'black'
+        align= 'center'
+        width="1400px">
+        </hr>
       <AddSongForm/>
       
     </div>
