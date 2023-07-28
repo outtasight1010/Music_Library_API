@@ -8,68 +8,54 @@ const AddSongForm = () => {
     artist: '',
     album: '',
     genre: '',
-    releaseDate: '',
+    release_date: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setSongs({ ...songs, [name]: value });
-  };
-
-  const addSong = async () => {
-    try {
-        const response = await axios.post('http://127.0.0.1:8000/api/music/', songs);
-      console.log('Song added successfully!', response.data);
-      // You can perform additional actions after the song is added
-    } catch (error) {
-      console.error('Error adding song:', error);
-      // Handle the error if necessary
+  const handleInput = (event) => {
+    const { name, value } = event.target;
+  
+    // If the field is the releaseDate, convert it to the "YYYY-MM-DD" format
+    if (name === 'releaseDate') {
+      const dateObj = new Date(value);
+      const formattedDate = dateObj.toISOString().slice(0, 10);
+      setSongs({ ...songs, [name]: formattedDate });
+    } else {
+      setSongs({ ...songs, [name]: value });
     }
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addSong();
-  };
-
-
   
 
-  //const handleSubmit = (e) => {
-    //e.preventDefault();
-    // Make a POST request to the backend API using Axios
-    //axios.post('http://127.0.0.1:8000/api/music/', songs)
-     // .then((response) => {
-        // Handle successful response, e.g., show a success message
-        //console.log('Song added successfully!', response.data);
-      //})
-      //.catch((error) => {
-        // Handle error response, e.g., show an error message
-        //console.error('Error adding song:', error);
-      //});
-  //};
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(songs);
+  
+    axios.post('http://127.0.0.1:8000/api/music/', songs)
+      .then(response => console.log(response))
+      .catch(err => console.log(err));
+  }
+  
 
   return (
     <form onSubmit={handleSubmit} style={styles.form}>
       <label style={styles.label}>
         Title:
-        <input type="text" name="title" value={songs.title} onChange={handleChange} style={styles.input} />
+        <input type="text" name="title" value={songs.title} onChange={handleInput} style={styles.input} />
       </label>
       <label style={styles.label}>
         Artist:
-        <input type="text" name="artist" value={songs.artist} onChange={handleChange} style={styles.input} />
+        <input type="text" name="artist" value={songs.artist} onChange={handleInput} style={styles.input} />
       </label>
       <label style={styles.label}>
         Album:
-        <input type="text" name="album" value={songs.album} onChange={handleChange} style={styles.input} />
+        <input type="text" name="album" value={songs.album} onChange={handleInput} style={styles.input} />
       </label>
       <label style={styles.label}>
         Genre:
-        <input type="text" name="genre" value={songs.genre} onChange={handleChange} style={styles.input} />
+        <input type="text" name="genre" value={songs.genre} onChange={handleInput} style={styles.input} />
       </label>
       <label style={styles.label}>
         Release Date:
-        <input type="text" name="release_date" value={songs.releaseDate} onChange={handleChange} style={styles.input} />
+        <input type="text" name="release_date" value={songs.releaseDate} onChange={handleInput} style={styles.input} />
       </label>
       <button type="submit" style={styles.button}>Add Song</button>
     </form>
